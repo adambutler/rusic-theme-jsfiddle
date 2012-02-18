@@ -1,1 +1,16 @@
-<h1>Test - New</h1>
+<script type="text/javascript">
+	
+	$().ready(function(){
+	    $.ajax({
+		  url: '{{ params.custom1 }}';,
+		  cache: false,
+		  success: function(html){
+		    $("#fiddleContainer").html(html);
+		  }
+		});
+	});
+</script>
+
+<div id="fiddleContainer">
+
+</div>
