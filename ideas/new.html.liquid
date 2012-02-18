@@ -2,9 +2,9 @@
 	<br/><br/>
 	<input placeholder="Title" name="idea[title]">
 	<input placeholder="Title" name="idea[content]" class="hiddenlols">
-	<input value="{{ params.custom1 }}" name="idea[custom1]">
+	<input value="{{ params.custom1 }}" name="idea[custom1]" id="urlInput">
 	<input type="submit" name="submit">
-	<br/><br/>
+	<br/><br/> 
 </form>
 
 <style type="text/css">
@@ -12,3 +12,12 @@
 		display: none;
 	}
 </style>
+
+<script type="text/javascript">
+	var theURL = $('urlInput').val();
+	
+	if(theURL.slice(0,20) == 'http://jsfiddle.net/'){
+		$('urlInput').val($('urlInput').val()+'embedded/result/');
+	}
+	
+</script>
