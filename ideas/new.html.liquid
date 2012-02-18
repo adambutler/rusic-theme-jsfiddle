@@ -14,10 +14,11 @@
 </style>
 
 <script type="text/javascript">
-	var theURL = $('urlInput').val();
+	var theURL = $('#urlInput').val();
 	
 	if(theURL.indexOf('jsfiddle.net') != -1){
-		$('urlInput').val($('urlInput').val()+'embedded/result/');
+		console.log('boom');
+		$('#urlInput').val($('#urlInput').val()+'embedded/result/');
 	}
 	
 </script>
