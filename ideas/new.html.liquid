@@ -16,7 +16,7 @@
 <script type="text/javascript">
 	var theURL = $('urlInput').val();
 	
-	if(theURL.slice(0,20) == 'http://jsfiddle.net/'){
+	if(theURL.indexOf('jsfiddle.net') != -1){
 		$('urlInput').val($('urlInput').val()+'embedded/result/');
 	}
 	
