@@ -1,6 +1,14 @@
 <form method="post" action="{{space.permalink}}/ideas" enctype="multipart/form-data">
+	<br/><br/>
 	<input placeholder="Title" name="idea[title]">
-	<input placeholder="Title" name="idea[content]">
+	<input placeholder="Title" name="idea[content]" class="hiddenlols">
 	<input value="{{ params.custom1 }}" name="idea[custom1]">
 	<input type="submit" name="submit">
+	<br/><br/>
 </form>
+
+<style type="text/css">
+	.hiddenlols {
+		display: none;
+	}
+</style>
