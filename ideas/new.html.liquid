@@ -1,16 +1,4 @@
-<script type="text/javascript">
-	
-	$().ready(function(){
-	    $.ajax({
-		  url: '{{ params.custom1 }}';,
-		  cache: false,
-		  success: function(html){
-		    $("#fiddleContainer").html(html);
-		  }
-		});
-	});
-</script>
-
-<div id="fiddleContainer">
-
-</div>
+<form action="/ideas" method="post">
+	<input value="{{ params.custom1 }}" name="idea[custom1]">
+	<input type="submit" name="submit">
+</form>
